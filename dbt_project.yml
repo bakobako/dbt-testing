@@ -35,7 +35,9 @@ models:
   my_new_project:
     # Applies to all files under models/example/
     orders_example:
-      materialized: view
+      materialized: table
+      staging:
+          materialized: view
       
 quoting:
   database: true
