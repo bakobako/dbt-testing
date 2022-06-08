@@ -34,7 +34,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   my_new_project:
     orders_example:
-      materialized: table
+      materialized: view
       
 quoting:
   database: true

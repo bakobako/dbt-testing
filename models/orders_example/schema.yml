@@ -29,7 +29,7 @@ models:
         tests:
           - accepted_values:
               values: [ 'credit_card', 'coupon', 'bank_transfer', 'gift_card' ]
-              
+
   - name: customers
     description: This table has basic information about a customer, as well as some derived facts based on a customer's orders
 
