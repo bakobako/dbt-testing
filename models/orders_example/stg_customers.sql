@@ -1,17 +1,17 @@
-with source as (
+with "source" as (
     select * from {{ source('my_source', 'customers') }}
 
 ),
 
-renamed as (
+"renamed" as (
 
     select
-        id as customer_id,
-        first_name,
-        last_name
+        "id" as "customer_id",
+        "first_name",
+        "last_name"
 
-    from source
+    from "source"
 
 )
 
-select * from renamed
+select * from "renamed"

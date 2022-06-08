@@ -1,18 +1,18 @@
-with source as (
+with "source" as (
     select * from {{ source('my_source', 'payments') }}
 
 ),
 
-renamed as (
+"renamed" as (
 
     select
-        id as payment_id,
-        order_id,
-        payment_method,
-        amount
+        "id" as "payment_id",
+        "order_id",
+        "payment_method",
+        "amount"
 
-    from source
+    from "source"
 
 )
 
-select * from renamed
+select * from "renamed"
